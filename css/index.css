@@ -1,0 +1,52 @@
+/*设置字体*/
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+/*设置卡片全局属性*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
+    backdrop-filter: blur(10px);
+    position: absolute;
+}
+/*设置鼠标悬停在卡片上的属性*/
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/*设置卡片内元素的属性*/
+.container {
+    padding: 2px 16px;
+}
+/*设置卡片局部属性*/
+#calendar {
+    width: 550px;
+    height: 600px;
+    top: 60px;
+    left: 72px;
+}
+#weather {
+    width: 450px;
+    height: 295px;
+    top: 60px;
+    left: 632px;
+}
+#weather-7days {
+    width: 825px;
+    height: 295px;
+    top: 366px;
+    left: 632px;
+}
+#status {
+    width: 364px;
+    height: 140px;
+    top: 65px;
+    left: 1092px;
+}
+#clock {
+    width: 364px;
+    height: 140px;
+    top: 215px;
+    left: 1092px;
+}
