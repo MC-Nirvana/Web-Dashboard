@@ -1,46 +1,86 @@
 <!DOCTYPE html>
-    <html>
+    <html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>个人小项目</title>
+        <!--标签页logo-->
         <link href="/img/ico/favicon.ico" rel="icon">
+        <!--引入CSS样式表-->
         <link href="/css/index.css" rel="stylesheet">
+        <link href="/css/calender.css" rel="stylesheet">
         <style>
+            /*设置背景属性*/
             body {
+                font-family: 'Segoe UI', sans-serif;
                 background-image: url('/img/img1.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
             }
         </style>
     </head>
     <body>
+        <!--项目标题-->
         <h2>个人小项目——带日历和天气的网页时钟</h2>
-        <!--日历卡片-->
-        <div class="card" id="calendar">
-            <div class="container">
-
+        <!--引入JavaScript-->
+        <script src="/js/index.js"></script>
+        <!--卡片容器-->
+        <div class="card-container">
+            <!--日历卡片-->
+            <div class="card unclickable" id="calendar" onclick="expandCard(this)">
+                <div class="container card-normal">
+                    <!--卡片内容-->
+                    <h1>日历</h1>
+                </div>
+                <div class="container card-new">
+                    <!--卡片内容（展开状态）-->
+                    <h1>日历（年视图）</h1>
+                        <script src="/js/calender.js"></script>
+                </div>
             </div>
-        </div>
-        <!--天气卡片-->
-        <div class="card" id="weather">
-            <div class="container">
-
+            <!--天气卡片-->
+            <div class="card unclickable" id="weather" onclick="expandCard(this)">
+                <div class="container card-normal">
+                    <!--卡片内容-->
+                    <h1>今日天气</h1>
+                </div>
+                <div class="container card-new">
+                    <!--卡片内容（展开状态）-->
+                    <h1>今日天气（详细模式）</h1>
+                </div>
             </div>
-        </div>
-        <!--七日天气卡片-->
-        <div class="card" id="weather-7days">
-            <div class="container">
-
+            <!--七日天气卡片-->
+            <div class="card unclickable" id="weather-7days" onclick="expandCard(this)">
+                <div class="container card-normal">
+                    <!--卡片内容-->
+                    <h1>七日天气</h1>
+                </div>
+                <div class="container card-new">
+                    <!--卡片内容（展开状态）-->
+                    <h1>七日天气（详细模式）</h1>
+                </div>
             </div>
-        </div>
-        <!--系统状态卡片-->
-        <div class="card" id="status">
-            <div class="container">
-
+            <!--系统状态卡片-->
+            <div class="card unclickable" id="status" onclick="expandCard(this)">
+                <div class="container card-normal">
+                    <!--卡片内容-->
+                    <h1>系统状态</h1>
+                </div>
+                <div class="container card-new">
+                    <!--卡片内容（展开状态）-->
+                    <h1>系统信息</h1>
+                </div>
             </div>
-        </div>
-        <!--时钟卡片-->
-        <div class="card" id="clock">
-            <div class="container">
-
+            <!--时钟卡片-->
+            <div class="card unclickable" id="clock" onclick="expandCard(this)">
+                <div class="container card-normal">
+                    <!--卡片内容-->
+                    <h1>时间</h1>
+                </div>
+                <div class="container card-new">
+                    <!--卡片内容（展开状态）-->
+                    <h1>时间（多时区）</h1>
+                </div>
             </div>
         </div>
     </body>

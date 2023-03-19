@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+.box{
+    margin: 0 auto;
+    width: 880px;
+}
+.title{
+    background: skyblue;
+}
+table{
+    height: 150px;
+    width: 150px;
+    font-size: 12px;
+    text-align: center;
+    float: left;
+    margin: 10px;
+    font-family: Arial,serif;
+}
+.today {
+    background-color: cornflowerblue;
+    font-weight: bold;
+}
