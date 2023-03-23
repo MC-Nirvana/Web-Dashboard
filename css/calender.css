@@ -1,23 +1,25 @@
-body {
+.calendar {
     text-align: center;
 }
-.box{
+.box {
     margin: 0 auto;
     width: 880px;
 }
-.title{
+.title {
     background: skyblue;
+    border-radius: 10px;
 }
-table{
-    height: 150px;
-    width: 150px;
-    font-size: 12px;
+.table {
+    height: 460px;
+    width: 500px;
+    font-size: 25px;
     text-align: center;
     float: left;
     margin: 10px;
-    font-family: Arial,serif;
+    font-family: "Sarasa Term SC",serif;
 }
 .today {
-    background-color: cornflowerblue;
+    background: cornflowerblue;
+    border-radius: 10px;
     font-weight: bold;
 }

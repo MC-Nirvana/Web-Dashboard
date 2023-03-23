@@ -14,15 +14,16 @@ h2 {
 .card.expanded .card-normal {
     display: none;
 }
-.card-new {
+.card-open {
     display: none;
 }
-.card.expanded .card-new {
+.card.expanded .card-open {
     display: block;
 }
 /*设置鼠标悬停在卡片上的属性*/
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: white;
 }
 /*设置展开后背景卡片的属性*/
 .blur {
@@ -45,7 +46,7 @@ h2 {
     top: 60px;
     left: 632px;
 }
-#weather-7days {
+#weather-days {
     width: 825px;
     height: 295px;
     top: 366px;
